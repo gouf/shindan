@@ -5,7 +5,7 @@ module Shindan
   class Scraper
     SHINDAN_URL = 'https://shindanmaker.com'.freeze
 
-    def initialize(shindan_id, user_name)
+    def initialize(shindan_id, user_name = '')
       @user_name = user_name
       agent = Mechanize.new
       @page = agent.get("#{SHINDAN_URL}/#{shindan_id}")
