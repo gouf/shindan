@@ -20,7 +20,30 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'shindan'
+
+shindan_id = 741_207
+name = 'gouf' # optional
+scraper = Shindan::Scraper.new(shindan_id, name)
+
+result = scraper.shindan
+# => "gouf as a Waifu\n\nHairstyle: Straight green hair\nEye Color: Green\nHeight: 144cm\nCup Size: C\nDere-type: Yandere\nSpecial Features: Thigh-highs, Glasses, Hair Ribbons\nPreferred …\nhttps://en.shindanmaker.com/741207"
+
+puts result
+# =>
+# gouf as a Waifu
+#
+# Hairstyle: Straight green hair
+# Eye Color: Green
+# Height: 144cm
+# Cup Size: C
+# Dere-type: Yandere
+# Special Features: Thigh-highs, Glasses, Hair Ribbons
+# Preferred …
+# https://en.shindanmaker.com/741207
+
+```
 
 ## Development
 
