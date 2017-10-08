@@ -7,7 +7,7 @@ Scraping Shindan result as text from [ShindanMaker](https://shindanmaker.com/)
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'shindan'
+gem 'shindan', github: 'gouf/shindan'
 ```
 
 And then execute:
